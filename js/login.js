@@ -6,7 +6,16 @@ document
     event.preventDefault();
     console.log("login btn clicked");
 
-    //get phn number
+    //get phn number and pin
     const phoneNumber = document.getElementById("phone-number").value;
-    console.log(phoneNumber);
+    const pinNumber = document.getElementById("pin-number").value;
+    console.log(phoneNumber, pinNumber);
+
+    //connect to server but we use bad way
+    if (phoneNumber === "2" && pinNumber === "1234") {
+      window.location.href = "../home.html";
+      console.log("you r log in");
+    } else {
+      alert("ur pin and number is wrong");
+    }
   });
