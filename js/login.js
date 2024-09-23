@@ -12,7 +12,7 @@ document
     console.log(phoneNumber, pinNumber);
 
     //connect to server but we use bad way
-    if (phoneNumber === "2" && pinNumber === "1234") {
+    if (phoneNumber === "1234" && pinNumber === "1234") {
       window.location.href = "../home.html";
       console.log("you r log in");
     } else {
