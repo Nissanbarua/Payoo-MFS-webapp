@@ -15,5 +15,7 @@ document
       const newBalance = balanceNumber - cashOut;
       //update balance
       document.getElementById("account-balance").innerText = newBalance;
+    } else {
+      alert("failed to cashout ! please try again");
     }
   });
